@@ -35,6 +35,7 @@ import { ServiceComponent } from "./widgets/service/service.component";
 import { CategoryProductFilterComponent } from "./widgets/category-product-filter/category-product-filter.component";
 import { BrandComponent } from "./widgets/brand/brand.component";
 import { TopSellerComponent } from "./widgets/top-seller/top-seller.component";
+import { SlideshowComponent } from "../slideshow/slideshow.component";
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { TopSellerComponent } from "./widgets/top-seller/top-seller.component";
     BlogModule,
     ShopModule,
     TranslateModule,
+    SlideshowComponent,
   ],
   exports: [BlogComponent],
 })
