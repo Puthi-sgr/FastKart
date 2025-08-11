@@ -1,0 +1,25 @@
+<div class="title-header">
+  <div class="d-flex align-items-center">
+    <h5>{{ "notifications" | translate }}</h5>
+  </div>
+</div>
+<ul class="notification-list" *ngIf="(notification$ | async)?.length">
+  <li
+    [class.unread]="!notification.read_at"
+    *ngFor="let notification of notification$ | async"
+  >
+    <h4>{{ notification?.data?.message }}</h4>
+    <h5>
+      <i class="ri-time-line"></i>
+      {{ notification?.created_at | date: "dd MMM yyyy hh:mm:a" }}
+    </h5>
+  </li>
+</ul>
+<app-no-data
+  [class]="'no-data-added'"
+  [image]="'assets/svg/empty-items.svg'"
+  [text]="'no_notifications_found'"
+  [description]="'You_have_not_notification_yet'"
+  *ngIf="!(notification$ | async)?.length"
+>
+</app-no-data>
