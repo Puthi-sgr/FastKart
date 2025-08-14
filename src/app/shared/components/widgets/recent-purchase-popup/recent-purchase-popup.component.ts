@@ -16,12 +16,12 @@ export class RecentPurchasePopupComponent {
   public product: Product | null;
   public show: boolean = false;
   public min: number = 10;
-  public popup_enable: boolean = true;
+  public popup_enable: boolean = false;
 
   constructor() {
     if (this.popup_enable) {
       setInterval(() => {
-        this.show = true;
+        this.show = false;
         this.min = Math.floor(Math.random() * 60) + 1;
         this.randomlySelectProduct();
         setTimeout(() => {
