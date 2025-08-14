@@ -1,5 +1,10 @@
 <div class="slideshow-container">
-  <img [src]="images[currentIndex]" class="slide-image" alt="Slide image" />
+  <img
+    style="border-radius: 10px"
+    [src]="images[currentIndex]"
+    class="slide-image"
+    alt="Slide image"
+  />
 
   <button type="button" class="nav-button left" (click)="prev()">
     &#10094;
