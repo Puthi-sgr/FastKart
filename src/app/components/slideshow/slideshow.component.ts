@@ -1,18 +1,18 @@
-import { Component, OnInit, OnDestroy, inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-import { PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, OnDestroy, inject } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
+import { PLATFORM_ID } from "@angular/core";
 
 @Component({
-  selector: 'app-slideshow',
+  selector: "app-slideshow",
   standalone: true,
-  templateUrl: './slideshow.component.html',
-  styleUrls: ['./slideshow.component.css'],
+  templateUrl: "./slideshow.component.html",
+  styleUrls: ["./slideshow.component.css"],
 })
 export class SlideshowComponent implements OnInit, OnDestroy {
   public images: string[] = [
-    'https://lkcamera.com/api/public/storage/2/slide1.jpg',
-    'https://lkcamera.com/api/public/storage/2/slide2.jpg',
-    'https://lkcamera.com/api/public/storage/2/slide3.jpg',
+    "https://lkcamera.com/api/public/storage/2/slide1.jpg",
+    "https://lkcamera.com/api/public/storage/2/slide2.jpg",
+    "https://lkcamera.com/api/public/storage/2/slide3.jpg",
   ];
   public currentIndex = 0;
 

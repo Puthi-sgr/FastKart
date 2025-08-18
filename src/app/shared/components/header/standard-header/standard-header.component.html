@@ -21,14 +21,7 @@
               [data]="data"
               [logo]="logo"
             ></app-logo>
-            <div class="middle-box">
-              <div class="center-box">
-                <div class="searchbar-box order-xl-1 d-none d-xl-block">
-                  <app-box-search [style]="'standard'"></app-box-search>
-                </div>
-              </div>
-            </div>
-            <div class="rightside-menu">
+            <div class="rightside-menu" style="visibility: hidden">
               <div class="option-list">
                 <ul>
                   <li>
@@ -49,6 +42,13 @@
                     <app-my-account [style]="'basic'"></app-my-account>
                   </li>
                 </ul>
+              </div>
+            </div>
+            <div class="middle-box">
+              <div class="center-box">
+                <div class="searchbar-box order-xl-1 d-none d-xl-block">
+                  <app-box-search [style]="'standard'"></app-box-search>
+                </div>
               </div>
             </div>
           </div>
