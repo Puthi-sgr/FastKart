@@ -30,9 +30,6 @@
             </div>
             <div class="rightside-box">
               <ul class="right-side-menu">
-                <li class="right-side mobile-search d-xl-none">
-                  <app-box-search [style]="'berlin'"></app-box-search>
-                </li>
                 <li class="right-side" *ngIf="data?.header?.support_number">
                   <app-call [data]="data"></app-call>
                 </li>
@@ -47,6 +44,9 @@
                 </li>
                 <li class="right-side onhover-dropdown">
                   <app-my-account></app-my-account>
+                </li>
+                <li class="right-side mobile-search d-xl-none">
+                  <app-box-search [style]="'berlin'"></app-box-search>
                 </li>
               </ul>
             </div>

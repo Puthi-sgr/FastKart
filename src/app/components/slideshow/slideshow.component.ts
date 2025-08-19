@@ -1,10 +1,12 @@
 import { Component, OnInit, OnDestroy, inject } from "@angular/core";
+import { CommonModule } from '@angular/common';
 import { isPlatformBrowser } from "@angular/common";
 import { PLATFORM_ID } from "@angular/core";
 
 @Component({
   selector: "app-slideshow",
   standalone: true,
+  imports: [CommonModule],
   templateUrl: "./slideshow.component.html",
   styleUrls: ["./slideshow.component.css"],
 })
