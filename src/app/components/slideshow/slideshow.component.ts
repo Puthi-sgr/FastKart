@@ -44,4 +44,8 @@ export class SlideshowComponent implements OnInit, OnDestroy {
     this.currentIndex =
       (this.currentIndex - 1 + this.images.length) % this.images.length;
   }
+
+  public goToSlide(index: number): void {
+    this.currentIndex = index % this.images.length;
+  }
 }
