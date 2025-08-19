@@ -12,4 +12,13 @@
   <button type="button" class="nav-button right" (click)="next()">
     &#10095;
   </button>
+
+  <div class="dot-container">
+    <span
+      class="dot"
+      *ngFor="let image of images; let i = index"
+      [class.active]="i === currentIndex"
+      (click)="goToSlide(i)"
+    ></span>
+  </div>
 </div>
