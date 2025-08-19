@@ -934,7 +934,7 @@ header {
               display: block;
 
               @media (max-width: 767px) {
-                display: none;
+                display: block;
               }
 
               a {
@@ -3171,7 +3171,9 @@ body.home {
       }
 
       @include mq-max(lg) {
-        display: none;
+      display: flex;
+        width: 100%;
+        margin-left: 0;
       }
 
       .center-box {
@@ -3179,7 +3181,8 @@ body.home {
         align-items: center;
 
         @include mq-max(lg) {
-          display: none;
+           display: flex;
+          width: 100%;
         }
       }
 
@@ -3187,7 +3190,11 @@ body.home {
         position: relative;
 
         @include mq-max(lg) {
-          display: none;
+           display: block;
+          width: 100%;
+           input {
+            width: 100%;
+          }
         }
 
         .search-button {
@@ -3246,6 +3253,11 @@ body.home {
           @media (max-width: 1235px) {
             width: 415px;
           }
+
+          @include mq-max(lg) {
+            width: 100%;
+          }
+
 
           &::placeholder {
             color: $content-color;
